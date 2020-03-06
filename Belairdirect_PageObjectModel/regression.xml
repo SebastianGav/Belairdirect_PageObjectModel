@@ -5,6 +5,8 @@
     <classes>
       <class name="testCases.HomePageTests"/>
       <class name="testCases.HomePageTests"/>
+      <class name="testCases.HomePageTests"/>
+      <class name="testCases.HomePageTests"/>
     </classes>
   </test> <!-- Test1 -->
 </suite> <!-- Regression -->
