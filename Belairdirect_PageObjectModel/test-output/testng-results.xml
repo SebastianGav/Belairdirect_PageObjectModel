@@ -17,6 +17,9 @@
       <![CDATA[I'm gonna click 'Next' button]]>
     </line>
     <line>
+      <![CDATA[I'm gonna click 'Skip' button]]>
+    </line>
+    <line>
       <![CDATA[I'm gonna select 'Car year']]>
     </line>
     <line>
@@ -38,20 +41,20 @@
       <![CDATA[I'm gonna click 'Next' button]]>
     </line>
   </reporter-output>
-  <suite name="Regression" duration-ms="16222" started-at="2020-02-10T00:10:52Z" finished-at="2020-02-10T00:11:08Z">
+  <suite name="Default suite" duration-ms="16610" started-at="2020-02-23T22:57:56Z" finished-at="2020-02-23T22:58:13Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="16222" started-at="2020-02-10T00:10:52Z" finished-at="2020-02-10T00:11:08Z">
+    <test name="Default test" duration-ms="16610" started-at="2020-02-23T22:57:56Z" finished-at="2020-02-23T22:58:13Z">
       <class name="testCases.HomePageTests">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.HomePageTests@4b9e13df]" name="openBrowser" is-config="true" duration-ms="4295" started-at="2020-02-10T00:10:47Z" finished-at="2020-02-10T00:10:52Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.HomePageTests@4b9e13df]" name="openBrowser" is-config="true" duration-ms="4460" started-at="2020-02-23T22:57:52Z" finished-at="2020-02-23T22:57:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:testCases.HomePageTests@4b9e13df]" name="openApplication" is-config="true" duration-ms="1665" started-at="2020-02-10T00:10:52Z" finished-at="2020-02-10T00:10:53Z">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:testCases.HomePageTests@4b9e13df]" name="openApplication" is-config="true" duration-ms="1461" started-at="2020-02-23T22:57:57Z" finished-at="2020-02-23T22:57:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="checkGetMyPriceButton()[pri:0, instance:testCases.HomePageTests@4b9e13df]" name="checkGetMyPriceButton" duration-ms="14513" started-at="2020-02-10T00:10:53Z" finished-at="2020-02-10T00:11:08Z">
+        <test-method status="PASS" signature="checkGetMyPriceButton()[pri:0, instance:testCases.HomePageTests@4b9e13df]" name="checkGetMyPriceButton" duration-ms="15082" started-at="2020-02-23T22:57:58Z" finished-at="2020-02-23T22:58:13Z">
           <reporter-output>
             <line>
               <![CDATA[I'm inside the 1st Test]]>
@@ -67,6 +70,9 @@
             </line>
             <line>
               <![CDATA[I'm gonna click 'Next' button]]>
+            </line>
+            <line>
+              <![CDATA[I'm gonna click 'Skip' button]]>
             </line>
             <line>
               <![CDATA[I'm gonna select 'Car year']]>
@@ -92,6 +98,6 @@
           </reporter-output>
         </test-method> <!-- checkGetMyPriceButton -->
       </class> <!-- testCases.HomePageTests -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Regression -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

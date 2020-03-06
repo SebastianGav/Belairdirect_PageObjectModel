@@ -3,11 +3,13 @@ package testCases;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
@@ -56,7 +58,7 @@ public class HomePageTests {
 		Reporter.log("I'm gonna click 'Get My Price' button");
 		hp.clickGetMyPrice();
 		Thread.sleep(2000);
-		
+	
 		Reporter.log("I'm gonna click 'Car' button");
 		hp.clickCar();
 		Thread.sleep(2000);
@@ -64,7 +66,10 @@ public class HomePageTests {
 		Reporter.log("I'm gonna click 'Next' button");
 		driver.findElement(By.xpath("//button[@class='bttn bttn--animated bttn--blue bttn--min-width-200 bttn--line-height-1']")).click();
 	    Thread.sleep(2000);
-		
+	    
+	    Reporter.log("I'm gonna click 'Skip' button");
+		driver.findElement(By.xpath("//a[@class='form-link']")).click();
+	    
 		Reporter.log("I'm gonna select 'Car year'");
 		Select selectCarYear = new Select(driver.findElement(By.xpath("//select[@id='select-year']")));
 		selectCarYear.selectByValue("2017");
@@ -87,6 +92,8 @@ public class HomePageTests {
 		Reporter.log("I'm gonna select 'Annual km'");
 		Select selectAnnualKM = new Select(driver.findElement(By.xpath("//select[contains(@id,'car-annual-km')]")));
 		selectAnnualKM.selectByValue("15999");
+		List<WebElement> list=selectAnnualKM.getOptions();
+		System.out.println(list.get(1).getText());
 		
 		Reporter.log("I'm gonna click 'Next' button");
 		driver.findElement(By.xpath("//button[@id='btn_next']")).click();
