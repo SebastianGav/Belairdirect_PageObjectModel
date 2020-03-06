@@ -6,6 +6,10 @@
       <class name="testCases.HomePageTests"/>
       <class name="testCases.HomePageTests"/>
       <class name="testCases.HomePageTests"/>
+<<<<<<< HEAD
+=======
+      <class name="testCases.HomePageTests"/>
+>>>>>>> Sprint53
     </classes>
   </test> <!-- Test1 -->
 </suite> <!-- Regression -->
